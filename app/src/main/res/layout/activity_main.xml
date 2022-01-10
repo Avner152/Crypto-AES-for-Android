@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/codere_grey"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_gravity="center_vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="40pt"
+        android:layout_marginTop="10pt"
+        android:src="@drawable/crypto"
+        />
+    <TextView
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Message Encryption!"
+        android:textSize="40dp"
+        android:gravity="center"
+
+        android:textColor="@color/crypto_light_blue" />
+
+    <EditText
+        android:id="@+id/message_text"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="50px"
+        android:textColor="@color/white"
+        android:hint="Insert your Message here"
+        android:textColorHint="@color/white"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10pt"
+        >
+    <Button
+        android:id="@+id/enc_main_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Encrypt"
+        android:layout_marginRight="5px"
+        android:textColor="@color/codere_grey"
+        android:backgroundTint="@color/crypto_light_blue_btn"
+        />
+    <Button
+        android:id="@+id/dcr_main_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Decrypt"
+        android:textColor="@color/codere_grey"
+        android:layout_marginLeft="5px"
+        android:backgroundTint="@color/crypto_light_blue_btn"
+        />
+    </LinearLayout>
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:text="® Lucia Heredia, Avner Levy"
+        android:textColor="@color/white"
+        android:textSize="7pt"
+        />
+</LinearLayout>
